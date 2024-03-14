@@ -50,6 +50,32 @@ Once installed, you can use the Automated Testing Framework as follows:
 2. Open the frontend interface in a web browser: `http://localhost:5000`
 3. Create test suites, add test cases, and execute tests using the web interface.
 
+# Automated Testing Framework Setup Script
+
+cd root 
+
+# Install dependencies
+install_dependencies() {
+    echo "Installing Flask..."
+    pip install Flask
+    echo "Dependencies installed successfully."
+}
+
+# Run the backend server
+run_backend() {
+    echo "Starting backend server..."
+    python3 src/backend/app.py
+}
+
+# Main function
+main() {
+    install_dependencies
+    run_backend
+}
+
+# Call the main function
+main
+
 For detailed usage instructions, refer to the [User Guide](docs/user_guide.md) and [Developer Guide](docs/developer_guide.md).
 
 ## Contributing
