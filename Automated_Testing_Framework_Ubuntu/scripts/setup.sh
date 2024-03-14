@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Automated_Testing_Framework_Ubuntu/scripts/setup.sh
+# Script to set up the automated testing framework
 
-# Install Flask dependency
-pip install Flask
+# Install dependencies
+pip install -r requirements.txt
