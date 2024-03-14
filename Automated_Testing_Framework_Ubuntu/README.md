@@ -61,6 +61,16 @@ install_dependencies() {
     echo "Dependencies installed successfully."
 }
 
+pip install -r requirements.txt
+
+source venv/bin/activate
+pip install Flask
+python3 src/backend/app.py
+
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+
+
 # Run the backend server
 run_backend() {
     echo "Starting backend server..."
