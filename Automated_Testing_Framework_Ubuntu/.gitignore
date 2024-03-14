@@ -1,0 +1,13 @@
+# Automated_Testing_Framework_Ubuntu/.gitignore
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Other
+*.log

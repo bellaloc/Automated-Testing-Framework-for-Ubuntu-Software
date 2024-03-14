@@ -1,0 +1,79 @@
+<!-- Automated_Testing_Framework_Ubuntu/src/frontend/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Testing Framework</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Automated Testing Framework</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#test-suites">Test Suites</a></li>
+            <li><a href="#create-test-suite">Create Test Suite</a></li>
+            <li><a href="#execute-tests">Execute Tests</a></li>
+            <li><a href="#test-results">Test Results</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="test-suites">
+            <h2>Test Suites</h2>
+            <!-- Display list of existing test suites -->
+            <ul>
+                <li>Test Suite 1</li>
+                <li>Test Suite 2</li>
+                <!-- Add more test suites dynamically -->
+            </ul>
+        </section>
+        <section id="create-test-suite">
+            <h2>Create Test Suite</h2>
+            <!-- Form to create a new test suite -->
+            <form>
+                <label for="suite-name">Test Suite Name:</label>
+                <input type="text" id="suite-name" name="suite-name">
+                <button type="submit">Create</button>
+            </form>
+        </section>
+        <section id="execute-tests">
+            <h2>Execute Tests</h2>
+            <!-- Form to select and execute test suites -->
+            <form>
+                <label for="select-suite">Select Test Suite:</label>
+                <select id="select-suite" name="select-suite">
+                    <option value="test-suite-1">Test Suite 1</option>
+                    <option value="test-suite-2">Test Suite 2</option>
+                    <!-- Add more test suites dynamically -->
+                </select>
+                <button type="submit">Execute</button>
+            </form>
+        </section>
+        <section id="test-results">
+            <h2>Test Results</h2>
+            <!-- Display test results dynamically -->
+            <div class="test-result">
+                <h3>Test Suite 1</h3>
+                <ul>
+                    <li>Test Case 1: Passed</li>
+                    <li>Test Case 2: Failed</li>
+                </ul>
+            </div>
+            <div class="test-result">
+                <h3>Test Suite 2</h3>
+                <ul>
+                    <li>Test Case 1: Passed</li>
+                    <li>Test Case 2: Passed</li>
+                </ul>
+            </div>
+            <!-- Add more test results dynamically -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Automated Testing Framework</p>
+    </footer>
+</body>
+</html>
